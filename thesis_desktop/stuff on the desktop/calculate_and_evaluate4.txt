@@ -1,0 +1,44 @@
+echo '########################################################'
+echo 'Starting logarithmic regression calculations to find coeficients'
+echo '########################################################'
+
+done:
+echo 'CDR1_group'
+echo '########################################################'
+python3 eval_log_reg_CDR12.py '/work1/s111518/Train' 'train_VDJ.tsv' '/work1/s111518/Train/Binary_group' 277 50 24 1 | tee CDR1_log_Reg_group.txt
+
+running:
+echo 'CDR1_Exact'
+echo '########################################################'
+python3 eval_log_reg_CDR12.py '/work1/s111518/Train' 'train_VDJ.tsv' '/work1/s111518/Train/Binary_exact' 276 50 24 1 | tee CDR1_log_Reg_exact.txt
+
+
+
+echo 'CDR2_group'
+echo '########################################################'
+python3 eval_log_reg_CDR12.py '/work1/s111518/Train' 'train_VDJ.tsv' '/work1/s111518/Train/Binary_group' 277 50 24 2 
+echo 'CDR2_exact'
+echo '########################################################'
+python3 eval_log_reg_CDR12.py '/work1/s111518/Train' 'train_VDJ.tsv' '/work1/s111518/Train/Binary_exact' 277 50 24 2 | tee CDR2_log_Reg_exact.txt
+
+
+started in the last tab:
+
+echo 'CDR3_group'
+echo '########################################################'
+python3 eval_log_reg_CDR3.py '/work1/s111518/Train' 'train_VDJ.tsv' '/work1/s111518/Train/Binary_group' 276 50 24
+echo 'CDR3_exact'
+echo '########################################################'
+python3 eval_log_reg_CDR3.py '/work1/s111518/Train' 'train_VDJ.tsv' '/work1/s111518/Train/Binary_exact' 277 50 24 | tee CDR3_log_Reg_exact.txt
+
+
+
+running in 3:
+python3 eval_log_reg_CDR3.py '/work1/s111518/Train' 'train_VDJ.tsv' '/work1/s111518/Train/Binary_group' 276 50 24 2
+
+running in 5:
+python3 eval_log_reg_CDR3.py '/work1/s111518/Train' 'train_VDJ.tsv' '/work1/s111518/Train/Binary_group' 276 50 24 3
+
+python3 eval_log_reg_CDR3.py '/work1/s111518/Train' 'train_VDJ.tsv' '/work1/s111518/Train/Binary_group' 276 50 24 4
+python3 eval_log_reg_CDR3.py '/work1/s111518/Train' 'train_VDJ.tsv' '/work1/s111518/Train/Binary_group' 276 50 24 5
+

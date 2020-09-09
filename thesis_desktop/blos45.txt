@@ -1,0 +1,48 @@
+login: ssh s111518@login2.gbar.dtu.dk
+get to node: linuxsh
+check space: getquota_work1.sh
+path to directory: /zhome/05/3/68467
+path to scratch directory: /work1/s111518
+getting into scratch directory: cd /work1/s111518
+module load scipy/1.4.1-python-3.6.10
+echo "backend: Agg" > ~/.config/matplotlib/matplotlibrc
+
+
+
+
+
+
+
+
+copy from local machine to directory (on local): scp /home/kristine/Documents/Thesis/github_vers4/* s111518@login2.gbar.dtu.dk:/work1/s111518/
+
+module load python3/3.6.2
+module load pandas/0.20.3-python-3.6.2
+module load matplotlib/2.0.2-python-3.6.2
+echo "backend: Agg" > ~/.config/matplotlib/matplotlibrc
+
+test_
+python3 TCR_distance.py '/work1/s111518/' 'train_VDJ.tsv' 50 0 "none" "none" "none"
+
+mv *_train_VDJ_dmat.tsv CDR3dist_Blosum45/Train
+
+
+__check if the correct modules are there
+module avial
+
+#pip3 install --user biopython
+#python3
+#import Bio
+
+
+
+scp /home/kristine/Documents/Thesis/github_vers4/TCR_distance.py s111518@login2.gbar.dtu.dk:/work1/s111518/
+
+scp s111518@login2.gbar.dtu.dk:/work1/s111518/cross_val/Test/immunomap_* /home/kristine/Desktop/new_VDJ/Test/
+
+scp s111518@login2.gbar.dtu.dk:/work1/s111518/cross_val/fold3/TCR_* /home/kristine/Desktop/new_VDJ/for_cluster/
+
+scp -rf /home/kristine/Desktop/new_VDJ/for_cluster/* s111518@login2.gbar.dtu.dk:/work1/s111518/cross_val/
+
+scp /home/kristine/Desktop/new_VDJ/Test/calc_TCR_distance_immunomap.py s111518@login2.gbar.dtu.dk:/work1/s111518/cross_val/Test/
+

@@ -1,0 +1,65 @@
+CDR1: (Group)
+81996
+Optimization terminated successfully.
+         Current function value: 0.691991
+         Iterations 4
+COEFICIENTS AND RESULTS
+                          Results: Logit
+==================================================================
+Model:              Logit            Pseudo R-squared: 0.002      
+Dependent Variable: Bin              AIC:              113488.9422
+Date:               2020-01-29 21:11 BIC:              113526.1999
+No. Observations:   81996            Log-Likelihood:   -56740.    
+Df Model:           3                LL-Null:          -56835.    
+Df Residuals:       81992            LLR p-value:      7.2643e-41 
+Converged:          1.0000           Scale:            1.0000     
+No. Iterations:     4.0000                                        
+------------------------------------------------------------------
+                   Coef.  Std.Err.    z     P>|z|   [0.025  0.975]
+------------------------------------------------------------------
+TM                -0.1672   0.0585  -2.8602 0.0042 -0.2818 -0.0526
+RMSD               0.0482   0.0526   0.9157 0.3598 -0.0549  0.1513
+Blosum62           0.3373   0.0389   8.6614 0.0000  0.2609  0.4136
+hydrophobicity    -0.4311   0.0330 -13.0501 0.0000 -0.4958 -0.3663
+==================================================================
+
+Classes predicted
+[0. 1.]
+accuray score:
+0.5165861749353627
+--------------------------------
+--- 19577.150238513947 seconds ---
+
+CDR2: (Group)
+Optimization terminated successfully.
+         Current function value: 0.691154
+         Iterations 4
+COEFICIENTS AND RESULTS
+                          Results: Logit
+==================================================================
+Model:              Logit            Pseudo R-squared: 0.003      
+Dependent Variable: Bin              AIC:              113351.7117
+Date:               2020-01-30 14:25 BIC:              113388.9694
+No. Observations:   81996            Log-Likelihood:   -56672.    
+Df Model:           3                LL-Null:          -56835.    
+Df Residuals:       81992            LLR p-value:      1.5109e-70 
+Converged:          1.0000           Scale:            1.0000     
+No. Iterations:     4.0000                                        
+------------------------------------------------------------------
+                    Coef.  Std.Err.    z    P>|z|   [0.025  0.975]
+------------------------------------------------------------------
+TM                 -0.5390   0.0676 -7.9722 0.0000 -0.6715 -0.4065
+RMSD                0.1802   0.0548  3.2889 0.0010  0.0728  0.2875
+Blosum62            0.0754   0.0340  2.2170 0.0266  0.0087  0.1421
+hydrophobicity      0.7237   0.0434 16.6921 0.0000  0.6387  0.8087
+==================================================================
+
+Classes predicted
+[0. 1.]
+accuray score:
+0.5217571588857993
+--------------------------------
+--- 18683.15753054619 seconds ---
+
+
+

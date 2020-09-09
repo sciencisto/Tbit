@@ -1,0 +1,80 @@
+login: ssh s111518@login2.gbar.dtu.dk
+get to node: linuxsh
+check space: getquota_work1.sh
+path to directory: /zhome/05/3/68467
+path to scratch directory: /work1/s111518
+getting into scratch directory: cd /work1/s111518
+
+copy from local machine to directory (on local): scp /home/kristine/Documents/Thesis/github_vers4/* s111518@login2.gbar.dtu.dk:/work1/s111518/
+
+module load python3/3.6.2
+module load pandas/0.20.3-python-3.6.2
+module load matplotlib/2.0.2-python-3.6.2
+echo "backend: Agg" > ~/.config/matplotlib/matplotlibrc
+
+test_
+python3 TCR_distance.py '/work1/s111518/' 'train_VDJ.tsv' 50 0 "none" "none" "none"
+
+mv *_train_VDJ_dmat.tsv CDR3dist_Blosum45/Train
+
+
+__check if the correct modules are there
+module avial
+
+#pip3 install --user biopython
+#python3
+#import Bio
+
+
+python3 TCR_distance.py '/home/kristine/Documents/Thesis/github_vers4/' 'train_VDJ.tsv' 50 0 "Blosum45" "none" "none"
+python3 TCR_distance.py '/home/kristine/Documents/Thesis/github_vers4/' 'train_VDJ.tsv' 50 0 "Blosum62" "none" "none"
+python3 TCR_distance.py '/home/kristine/Documents/Thesis/github_vers4/' 'train_VDJ.tsv' 50 0 "Pam10" "none" "none"
+python3 TCR_distance.py '/home/kristine/Documents/Thesis/github_vers4/' 'train_VDJ.tsv' 50 0 "K-Mer_3" "none" "none"
+python3 TCR_distance.py '/home/kristine/Documents/Thesis/github_vers4/' 'train_VDJ.tsv' 50 0 "K-Mer_4" "none" "none"
+python3 TCR_distance.py '/home/kristine/Documents/Thesis/github_vers4/' 'train_VDJ.tsv' 50 0 "Atchley_Factors" "none" "none"
+python3 TCR_distance.py '/home/kristine/Documents/Thesis/github_vers4/' 'train_VDJ.tsv' 50 0 "hydrophobicity" "none" "none"
+python3 TCR_distance.py '/home/kristine/Documents/Thesis/github_vers4/' 'train_VDJ.tsv' 50 0 "none" "TM" "none"
+python3 TCR_distance.py '/home/kristine/Documents/Thesis/github_vers4/' 'train_VDJ.tsv' 50 0 "none" "RMSD" "none"
+python3 TCR_distance.py '/home/kristine/Documents/Thesis/github_vers4/' 'train_VDJ.tsv' 50 0 "none" "none" "TM"
+python3 TCR_distance.py '/home/kristine/Documents/Thesis/github_vers4/' 'train_VDJ.tsv' 50 0 "none" "none" "RMSD"
+
+scp /home/kristine/Documents/Thesis/github_vers4/TCR_distance.py s111518@login2.gbar.dtu.dk:/work1/s111518/
+
+scp /home/kristine/Documents/Thesis/github_vers4/CDR_3_distance.py s111518@login2.gbar.dtu.dk:/work1/s111518/
+
+scp s111518@login2.gbar.dtu.dk:/work1/s111518/*.png /home/kristine/Documents/Thesis/ 
+yes
+
+scp s111518@login2.gbar.dtu.dk:/work1/s111518/CDR1dist_Blosum62/Train_TPR.csv /home/kristine/Documents/Thesis/TPR
+
+
+scp /home/kristine/Documents/Thesis/github_vers4/Libraries/CDR1_blos62.csv s111518@login2.gbar.dtu.dk:/work1/s111518/Libraries/
+scp /home/kristine/Documents/Thesis/github_vers4/Libraries/CDR1_hydro.csv s111518@login2.gbar.dtu.dk:/work1/s111518/Libraries/
+scp /home/kristine/Documents/Thesis/github_vers4/Libraries/CDR1_RMSD.csv s111518@login2.gbar.dtu.dk:/work1/s111518/Libraries/
+scp /home/kristine/Documents/Thesis/github_vers4/Libraries/CDR2_blos62.csv s111518@login2.gbar.dtu.dk:/work1/s111518/Libraries/
+scp /home/kristine/Documents/Thesis/github_vers4/Libraries/CDR2_hydro.csv s111518@login2.gbar.dtu.dk:/work1/s111518/Libraries/
+scp /home/kristine/Documents/Thesis/github_vers4/Libraries/CDR2_RMSD.csv s111518@login2.gbar.dtu.dk:/work1/s111518/Libraries/
+------------------------------------------------------
+-----------------------------------------------------
+
+#python3 Evaluation_2.py '/work1/s111518/CDR1dist_RMSD/Train/' '/work1/s111518/Binary/Train_grouped/'
+#python3 Evaluation_2.py '/work1/s111518/CDR2dist_Blosum62/Train/' '/work1/s111518/Binary/Train/' 277
+#python3 Evaluation_2.py '/work1/s111518/CDR1dist_hydrophobicity/Train/' '/work1/s111518/Binary/Train/' 277
+#python3 Evaluation_2.py '/work1/s111518/CDR2dist_hydrophobicity/Train/' '/work1/s111518/Binary/Train/' 277
+#python3 Evaluation_2.py '/work1/s111518/CDR2dist_TM/Train/' '/work1/s111518/Binary/Train/' 277
+
+###########################################################################################
+scp s111518@login2.gbar.dtu.dk:/work1/s111518/CDR1dist_RMSD/Train_TPR.csv /home/kristine/Documents/Thesis/TPR/CDR1
+scp s111518@login2.gbar.dtu.dk:/work1/s111518/CDR1dist_TM/Train_TPR.csv /home/kristine/Documents/Thesis/TPR/CDR1
+scp s111518@login2.gbar.dtu.dk:/work1/s111518/CDR1dist_Blosum62/Train_TPR.csv /home/kristine/Documents/Thesis/TPR/CDR1
+
+
+
+#############################
+scp /home/kristine/Documents/Thesis/github_vers4/Libraries/Binary_epitope_lib.csv s111518@login2.gbar.dtu.dk:/work1/s111518/Libraries/
+scp /home/kristine/Documents/Thesis/github_vers4/bash_scripts/Pam10_1.sh s111518@login2.gbar.dtu.dk:/work1/s111518/
+
+
+
+
+

@@ -1,0 +1,40 @@
+Agenda for Skype Meeting (Sunday 26. Jan)
+------------------------------------------------
+
+1) The evaluation problem
+------------------------------------------------
+	a) ROC & TPR nonsense curves 
+	b) Distrort distributions of negative and 
+	   positive
+
+	c) Conclusion1: I suck - try small subset
+
+	d) Really promising results.
+	e) Scale up to glanville (it sucks agian)
+
+	f) Conclusion2: Maybe ROC is not good in 
+	   this case
+
+	g) Affinity propergation for all methods 
+           - no clear results
+
+2) The path forward
+--------------------------------------------------
+	a) What is my next step? Logistic regression 
+           - but on what?
+	b) A different clustering technique?
+	c) Brute force? combinations? 
+
+
+3) Comparisons
+--------------------------------------------------
+	a) which tools does it make sense to 
+	   compare to by now (immunomap!, glanville?
+	   sensitivity? Repertorie? TCRdist?)
+
+3) The Thesis itself
+--------------------------------------------------
+	a) I have almost finished the Theory - will
+	   send this week
+	b) As soon as we agree on the last method of
+	   evaluation, i have that ready too. 

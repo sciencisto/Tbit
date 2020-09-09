@@ -1,0 +1,5 @@
+Estimated number of clusters: 5
+Homogeneity: 0.319
+Completeness: 0.529
+V-measure: 0.398
+Adjusted Rand Index: 0.094

@@ -1,0 +1,42 @@
+,Count
+ tetramer-sort,9007
+" antigen-loaded-targets, IFNg capture assay",28
+" antigen loaded targets, IFNg capture assay",3
+ limiting-dilution-cloning,38
+" limiting-dilution-cloning,tetramer-sort",15
+" antigen-loaded-target,limiting-dilution-cloning",19
+" tetramer-sort,antigen-expressing cells,cultured-T-cells",4
+ cla,2
+" peptide-restimulation,tetramer-sort",27
+" antigen-loaded-targets,cloning-by-limiting-dilution",11
+ ,82
+ streptamer-sort,65
+ antigen-loaded-targets,122
+ dextramer-sort,20907
+" tetramer-sort,beads",101
+" beads,tetramer-sort",43
+ multimer-sort,703
+" tetramer-sort,cultured-T-cells",7
+ pentamer-sort,132
+ antigen-expressing-targets,15
+" MHC-peptide-beads,cultivated-t-cells",46
+ Tetramer-sort,133
+ cultured-T-cells,342
+" dextramer-sort,beads",195
+ CTL clone,1
+" antigen-loaded-target, CTL culture",9
+" tetramer-sort,antigen-loaded-targed",23
+" cultured-T-cells,tetramer-sort",336
+" antigen-loaded-targets,cultured-T-cells",41
+" antigen-loaded-targets,dextramer-sort",6089
+" antigen-loaded-targets, pentamer-sort",44
+" dextramer-sort,cultured-T-cells",195
+" limited-dilution-cloning,antigen-expressing-targets",19
+" antigen-loaded-targets, tetramer-sort",261
+" tetramer-sort,limiting-dilution-cloning",38
+" antigen-loaded-targets,pentamer-sort",37
+" cultured-T-cells,antigen-expressing-targets",9
+" limiting-diffusion-cloning,antigen-expressing-targets",30
+" cultured-T-cells,beads,tetramer-sort",63
+ cd8null-tetramer-sort,31
+ pelimer-sort,29
